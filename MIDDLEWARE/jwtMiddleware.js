@@ -12,7 +12,7 @@ console.log(jwtResponse);
 req.payload=jwtResponse.userId
 next()
 } catch (error) {
-res.status(401).json('authrization failed....please login')
+res.status(401).json('authorization failed....please login')
 }
 
 }
